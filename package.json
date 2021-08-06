@@ -1,0 +1,24 @@
+{
+  "name": "laravel-mix-webp-watched",
+  "version": "1.0.0",
+  "description": "Monitors and converts image changes to webp.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blanket11/laravel-mix-webp-watched.git"
+  },
+  "keywords": [
+    "laravel-mix",
+    "webp",
+    "watch"
+  ],
+  "author": "blanket11 <bkweb11k@gmail.com> (https://push.tokyo/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blanket11/laravel-mix-webp-watched/issues"
+  },
+  "homepage": "https://github.com/blanket11/laravel-mix-webp-watched#readme"
+}
