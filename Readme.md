@@ -7,7 +7,13 @@ This plugin is an extension to Laravel Mix that monitors image changes and conve
 
 Install the package in your project.
 ```
-npm -i --save-dev laravel-mix-webp-watched
+npm install --save-dev laravel-mix-webp-watched
+```
+
+OR
+
+```
+yarn add --dev laravel-mix-webp-watched
 ```
 
 Add it to your `webpack.mix.js` file.
