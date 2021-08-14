@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "globby": "^11.0.4",
-    "imagemin": "^8.0.0",
-    "imagemin-webp": "^6.0.0"
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^5.1.0"
   }
 }
