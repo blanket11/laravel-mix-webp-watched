@@ -6,7 +6,12 @@ const imagemin = require('imagemin')
 const imageminWebp = require('imagemin-webp')
 
 class ConversionTask extends Task {
+
+  _isBeingWatched = 0;
+
   run() {
+    if (this._isBeingWatched) return;
+
     this.data.imageminWebpOptions = Object.assign({
       quality: 50
     }, this.data.imageminWebpOptions)
@@ -17,6 +22,8 @@ class ConversionTask extends Task {
   }
 
   watch() {
+    if (this._isBeingWatched) return;
+
     let watcher = chokidar.watch(this.data.from);
 
     watcher.on('change', (path, status) => {
@@ -26,6 +33,8 @@ class ConversionTask extends Task {
     watcher.on('add', (path, status) => {
       this._convertWebp(path);
     });
+
+    this._isBeingWatched = true;
   }
 
   _convertWebp(imagePath) {
